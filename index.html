@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="parallax_group hero-container">
+            <div class="parallax_layer sky"></div>
+            <div class="parallax_layer bushes"></div>
+            <div class="parallax_layer water"></div>
+            <div class="parallax_layer people1"></div>
+            <div class="parallax_layer people2"></div>
+            <div class="parallax_layer people3"></div>
+            <div class="parallax_layer hero-text">
+            <h2><span class="title">CHIEF-KOKO</span> Wishing You...</h2>
+            <ul>
+                <li><a href="#">Happy Christmas</a></li>
+                <li><a href="#">Happy New Year</a></li>
+                <li><a href="?#Quotes" class="btn">Get Quotes</a></li>              
+            </ul>
+            <div class="year-container">
+                <h1>2</h1>
+                <h1>0</h1>
+                <h1>2</h1>
+                <h1>3</h1>
+            </div>
+            <div class="social-container">
+                <a href="https://github.com/chief-Koko" target="_blank">
+                <i class="icon ion-logo-github"></i></a>
+
+                <a href="" target="_blank">
+                <i class="icon ion-logo-youtube"></i></a>
+
+                <a href="#" target="_blank">
+                    <i class="icon ion-logo-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+   
+    <div class="parallax_group info-container">
+        <img src="img/christmas-message-for-family.jpg" alt="Lively and colourful concert" />
+        <div class="text-container" id="Quotes">
+            <h2 class="wishing-text"><span class="typing"></span></h2>
+            <p>"And we have known and believed the love that God hath to us. God is love; and he that dwelleth in love dwelleth in God, and God in him."</p>
+            <p>-1 John 4 : 16 KJV</p>
+            <a href="#"  onclick="togglePlayPause(); return false;">
+                <audio id="myAudio" controls>
+                    <source src="song.mp3" type="audio/mp3">
+                </audio>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <p> copyright &copy; 2023 | chief-koko | security analyst | web developer </p>
+    
+    </div>
+    
+</div>
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+       // typing text animation script
+       var typed = new Typed(".typing", {
+        strings: ["Merry Chrismas", "Happy New Year"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    // Get the audio element
+    var audio = document.getElementById("myAudio");
+
+    // Function to play or pause the audio
+    function togglePlayPause() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+
+    // Event listener for the play/pause button
+    audio.addEventListener("play", function () {
+        console.log("Audio is now playing");
+    });
+
+    audio.addEventListener("pause", function () {
+        console.log("Audio is now paused");
+    });
+</script>
+</body>
+</html>
